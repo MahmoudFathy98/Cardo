@@ -30,18 +30,13 @@ public class card extends  JFrame implements MouseMotionListener , ActionListene
     public void mouseDragged(MouseEvent e) {
     mouseX = e.getX();
     mouseY = e.getY();
-    x.setBounds(mouseX, mouseY,1000,550);
-repaint();
-}
-    public void mouseMoved(MouseEvent e) {}
-
-}
+    x.setBounds(mouseX, mouseY,1000,550); repaint();}}
 //_____________________________________________________________________________________________________________
-//Class which created an array of labels
+//Class that creates an array of labels
 public class MyPanel extends JPanel {
     public MyPanel() throws IOException{
         super();
-        showGUI();
+        show();
     }
 
     private JLabel[] createLabels() throws IOException{
@@ -53,7 +48,7 @@ public class MyPanel extends JPanel {
         return labels;
     }
 
-    private void showGUI() throws IOException{
+    private void show() throws IOException{
         JLabel[] lab=createLabels();
         for (int i=0;i<lab.length;i++){
             add(lab[i]);
