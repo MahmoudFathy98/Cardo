@@ -35,7 +35,7 @@ public class card extends  JFrame implements MouseMotionListener , ActionListene
 //Class that creates an array of labels
 public class MyPanel extends JPanel {
     public MyPanel() throws IOException{
-        super();
+        super(); 
         show();
     }
 
